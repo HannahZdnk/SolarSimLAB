@@ -62,11 +62,6 @@ pip install pandas matplotlib numpy scikit-learn scipy
 
 ---
 
-### 🔹 ΔT vs Depth – Best Fit Overlay
-
-![Overlay of Best Fit Models - ΔT](Toverlay_best_fit.png)
-
----
 
 ## 💡 How to Use
 
