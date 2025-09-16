@@ -58,13 +58,13 @@ pip install pandas matplotlib numpy scikit-learn scipy
 
 ### 🔹 Temperature vs Depth – Best Fit Overlay
 
-![Overlay of Best Fit Models - Temperature](images/overlay_best_fit.png)
+![Overlay of Best Fit Models - Temperature](overlay_best_fit.png)
 
 ---
 
 ### 🔹 ΔT vs Depth – Best Fit Overlay
 
-![Overlay of Best Fit Models - ΔT](images/Toverlay_best_fit.png)
+![Overlay of Best Fit Models - ΔT](Toverlay_best_fit.png)
 
 ---
 
