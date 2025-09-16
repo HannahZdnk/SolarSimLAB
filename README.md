@@ -4,35 +4,26 @@ This repository contains Python notebooks for processing `.txt` files exported f
 
 ## 📈 Overview
 
-The notebooks:
+These Jupyter Notebooks are designed to automate the analysis of thermal simulation data exported from **COMSOL**. The workflow begins with a `.txt` file containing simulation output, which is **loaded directly into the notebook code**.
 
-- Parse and organize temperature data by **depth**
-- Compute:
-  - Average temperature per depth
-  - Average temperature change (ΔT) per depth
-- Fit both **polynomial** and **logarithmic** models to the data
-- Compare model performance using **R² (coefficient of determination)**
-- Generate **graphs** for visualization and reporting
+Once loaded, the notebooks:
 
+- **Parse and organize temperature data** as a function of **depth (Z)** from the material surface.
+- **Compute key metrics** including:
+  - **Average temperature** at each depth
+  - **Average temperature change (ΔT)** between data points
+- **Fit the cleaned data** to both:
+  - A **polynomial model** using `numpy.polyfit`
+  - A **logarithmic model** using `scipy.optimize.curve_fit`
+- **Evaluate model accuracy** using the **R² score** (coefficient of determination)
+- **Automatically generate and export graphs/images** that:
+  - Show raw data and fitted curves
+  - Visually compare model fits
+  - Are ready for inclusion in lab reports
 All analysis is performed using **Jupyter Notebooks** with an emphasis on clarity and automation for lab reporting.
 
 ---
 
-## 🗂 File Structure
-
-```
-📁 your-repo/
-├── notebook_avg_temp.ipynb       # Average Temperature vs Depth
-├── notebook_avg_dT.ipynb         # ΔT (Temperature Change) vs Depth
-├── data/
-│   └── *.txt                     # Raw COMSOL data files
-├── images/
-│   ├── overlay_best_fit.png      # Plot of best-fit models (Temperature)
-│   └── Toverlay_best_fit.png     # Plot of best-fit models (ΔT)
-└── README.md
-```
-
----
 
 ## 🔧 Requirements
 
